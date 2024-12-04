@@ -12,7 +12,7 @@ library(ggplot2)
 
 ## Exercise 4: 
 ### A:
-Link to GitHub for download [here]{url here}
+Link to GitHub for download [here]{https://github.com/reaganderson/Anderson445Package}
 
 ### B:
 ```{r}
@@ -24,7 +24,7 @@ data("Flagstaff_Weather", package = 'Anderson445Package')
 ```{r}
 ggplot(Flagstaff_Weather,
        aes(x=DATE, y = TMAX)) +
-  geom_point() +
+  geom_point( color='deepskyblue3' ) +
   labs(title= "Max Temperature in Flagstaff, AZ from 2015-2019" ) +
   labs(x="Date", y="Max Temp of the Day")
 ```
