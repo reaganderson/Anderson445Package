@@ -1,0 +1,43 @@
+---
+title: "Exercise 4"
+author: "Reagan Anderson"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r}
+library(Anderson445Package)
+library(ggplot2)
+```
+
+## Exercise 4: 
+### A:
+Link to GitHub for download [here]{url here}
+
+### B:
+```{r}
+data("Flagstaff_Weather", package = 'Anderson445Package')
+```
+
+
+### C:
+```{r}
+ggplot(Flagstaff_Weather,
+       aes(x=DATE, y = TMAX)) +
+  geom_point() +
+  labs(title= "Max Temperature in Flagstaff, AZ from 2015-2019" ) +
+  labs(x="Date", y="Max Temp of the Day")
+```
+
+
+### D: 
+```{r}
+Anderson445Package::FizzBuzz(15)
+```
+
+```{r}
+Anderson445Package::FizzBuzz(-15)
+```
+
+
+
